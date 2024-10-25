@@ -20,10 +20,12 @@ Preprocessed data, NMRExtractor paragraph extraction and fine-tuning code, Rule-
 
 ##  Demo of NMRExtractor
 
-Here we provide an example notebook for extracting NMR data using NMRExtractor in ```demo/NMRExtractor_CPU.ipynb```.
+Here we provide an example notebook using Gradio visualization and NMRExtractor to extract NMR data in ```demo/NMRExtractor_CPU.ipynb```.
 
-We also provide an online demo of NMRExtractor on 
-https://huggingface.co/spaces/sweetssweets/NMRExtractor.
+A full workflow for extracting NMR data from an article using NMRExtractor is also provided in ```demo/demo_use_NMRExtractor_extract_NMR_data_from_Article.ipynb```.
+
+We also provide an online demo of NMRExtractor at
+https://huggingface.co/spaces/sweetssweets/NMRExtractor
 
 ## NMRExtractor Model Weight  Downloads
 
