@@ -9,13 +9,13 @@ cd NMRExtractor
 
 Preprocessed data, NMRExtractor paragraph extraction and fine-tuning code, Rule-based method code, NMRBank datasets, README workflows have been placed in the corresponding folders:
 
-- ```data```
+- ```data/```
 
-- ```NMRExtractor```
+- ```NMRExtractor/```
 
 - ```Rule-based/```
 
-- ```NMRBank```
+- ```NMRBank/```
 
 
 ##  Demo of NMRExtractor
@@ -30,7 +30,7 @@ https://huggingface.co/spaces/sweetssweets/NMRExtractor.
 The model weights of NMRExtractor can be downloaded from 
 https://huggingface.co/sweetssweets/NMRExtractor. 
 
-## NMRBank
+# NMRBank
 The NMRBank dataset can be downloaded from the NMRBank folder.
 NMRBank contains 225,809 experimental 1H and 13C NMR data extracted from the literature, and we have successfully converted the IUPAC names of 156,621 of these data into SMILES.
 
@@ -63,4 +63,4 @@ model_dir = snapshot_download("LLM-Research/Meta-Llama-3-8B-Instruct", revision=
 
 ## Fine-tuning
 
-Code and tutorials for fine-tuning language models (Llama3, Llama2, Mistral) for NMRExtractor are in the NMRExtractor folder.
+Code and tutorials for fine-tuning language models (Llama3, Llama2, Mistral) for NMRExtractor are in the - ```NMRExtractor/``` folder.
