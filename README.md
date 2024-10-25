@@ -5,6 +5,18 @@
 git clone https://github.com/eat-sugar/NMRExtractor.git
 cd NMRExtractor
 ```
+## 🖊 Datasets and Codes
+
+Preprocessed data, NMRExtractor paragraph extraction and fine-tuning code, Rule-based method code, NMRBank datasets, README workflows have been placed in the corresponding folders:
+
+- ```data```
+
+- ```NMRExtractor```
+
+- ```Rule-based/```
+
+- ```NMRBank```
+
 
 ##  Demo of NMRExtractor
 
@@ -13,11 +25,42 @@ Here we provide an example notebook for extracting NMR data using NMRExtractor i
 We also provide an online demo of NMRExtractor on 
 https://huggingface.co/spaces/sweetssweets/NMRExtractor.
 
-## Model Weight  Downloads
+## NMRExtractor Model Weight  Downloads
 
 The model weights of NMRExtractor can be downloaded from 
 https://huggingface.co/sweetssweets/NMRExtractor. 
 
 ## NMRBank
 The NMRBank dataset can be downloaded from the NMRBank folder.
-NMRBank has experimental 1H and 13C NMR data of 225,809 compounds extracted from literature, and we successfully converted the IUPAC names of 156,621 data to SMILES.
+NMRBank contains 225,809 experimental 1H and 13C NMR data extracted from the literature, and we have successfully converted the IUPAC names of 156,621 of these data into SMILES.
+
+## 📀Fine-tuning Open-source Language Models (Mistral, Llama2，Llama3) 
+
+### Environment (Linux)
+```bash
+mamba create -n llm python=3.10
+mamba activate llm 
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple pandas numpy ipywidgets tqdm
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple torch==2.1.2  transformers==4.38.2 datasets tiktoken wandb==0.11 openpyxl
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple peft==0.8.0 accelerate bitsandbytes safetensors jsonlines
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple vllm==0.3.1
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple trl==0.7
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple tensorboardX tensorboard
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple textdistance nltk matplotlib seaborn seqeval
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple modelscope
+```
+
+## Pretrained Models Downloads
+
+Open-sourced pretrained models (Llama3, Llama2, Mistral) can be downloaded from [huggingface](https://huggingface.co/models) or [modelscope](https://www.modelscope.cn/models).
+
+Here is an example for downloading pretrained models by scripts on linux servers from modelscope:
+```python
+from modelscope import snapshot_download
+model_dir = snapshot_download('AI-ModelScope/Mistral-7B-Instruct-v0.2', revision='master', cache_dir='/home/pretrained_models')
+model_dir = snapshot_download("LLM-Research/Meta-Llama-3-8B-Instruct", revision='master', cache_dir='/home/pretrained_models')
+```
+
+## Fine-tuning
+
+Code and tutorials for fine-tuning language models (Llama3, Llama2, Mistral) for NMRExtractor are in the NMRExtractor folder.
