@@ -7,19 +7,26 @@
 
 ### Full Parameter Fine-tuning Open-source Large Language Models (Llama3, Llama2, Mistral)
 
-Training Code in ```finetune_llms_peft_for_llms.py```
+Training Code in ```1_finetune_llms_peft_for_llms.py```
 
-Inferencing Code in ```vllm_inference_full_finetuned_llms.ipynb```
+Inferencing Code in ```2_vllm_inference_full_finetuned_llms.ipynb```
 
 ### Parameter Efficient Fine-tuning (PEFT) Open-source Large Language Models (Llama3, Llama2, Mistral)
 
-Training Code in ```finetune_llms_full_for_llms.py```
+Training Code in ```1_finetune_llms_full_for_llms.py```
 
-Inferencing Code in ```vllm_inference_peft_finetuned_llms.ipynb```
+Inferencing Code in ```2_vllm_inference_peft_finetuned_llms.ipynb```
 
-## 3. Evaluating the results of Paragraph2NMR
+## 3. Evaluating the results of NMRExtractor
 
 All predictions will be saved in ```results/predictions```
 
-Evalutating codes for LLMs (ChatGPT, Llama, Mistral) are in ```evaluate_llms.ipynb```
+Evalutating codes for LLMs (ChatGPT, Llama, Mistral) are in ```3_evaluate_llms.ipynb```
 
+## 4. Extract NMR data from Pubmed articles using NMRExtractor
+
+Publicly available articles from the PubMed database can be downloaded from https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_bulk/
+
+The data description of PubMed database can be found at https://pmc.ncbi.nlm.nih.gov/tools/ftp/
+
+The code for extracting NMR data from the PubMed article using NMRExtractor is in ```4_Extract_NMR_data_from_Pubmed_articles_using_NMRExtractor.ipynb```
