@@ -13,7 +13,7 @@ from transformers import TrainerCallback
 
 # Data Loading and Preprocessing
 train_file = "../data/train/train_1000.csv"
-test_file = "../data/test/test_300.csv"
+test_file = "../data/test/test_set_1_(300).csv"
 train_df = pd.read_csv(train_file, encoding='utf-8')
 # train_df = train_df[:400]
 test_df = pd.read_csv(test_file, encoding='utf-8')
