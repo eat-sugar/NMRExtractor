@@ -51,7 +51,6 @@ def main(args):
                                  'complete_para': 0,
                                  'line_contain_C': [], 'C': []}
         stastic_for_H(file, lines_dict_for_file_H, H_path)
-        # store the stastic of H-spectrum
         stastic_for_C(file, lines_dict_for_file_C, C_path)
     # ******************************************************************
     # According to the previous statistics, the literature with HC spectrum is taken out separately, 
@@ -59,7 +58,7 @@ def main(args):
     txt_contain_H = get_files_with_H(H_path, txt_reprocess_path, json_path)
     txt_contain_C = get_files_with_C(C_path, txt_reprocess_path, json_path)
     extract_H_with_compound(txt_contain_H, output_H_C_with_compound_H)
-    # 返回一个文件夹包含所需的JSON文件
+    # Returns a folder containing the required JSON files
     extract_C_with_compound(txt_contain_C, output_H_C_with_compound_C)
 
 
