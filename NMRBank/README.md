@@ -16,3 +16,21 @@ We also provide the NMRBank dataset in JSON format for convenient access and eas
 
 - ```NMRBank_json_format\NMRBank_data_225809_json.zip```
 - ```NMRBank_json_format\NMRBank_data_with_SMILES_156621_in_225809_json.zip```
+
+## 4. NMRBank dataset reading and viewing
+
+### Read csv file
+```python
+import pandas as pd
+# Reading CSV Files
+df = pd.read_csv(r"NMRBank_data_225809.csv", encoding="utf-8")
+df
+```
+
+### Read json file
+```python
+import pandas as pd
+# Reading json Files
+df = pd.read_json(r"NMRBank_data_225809.json", orient="records", lines=True)
+df
+```
