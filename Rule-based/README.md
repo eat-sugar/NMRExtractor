@@ -9,7 +9,7 @@ pip install python-docx
 - Running the ```main.py``` file can extract the NMR data from the articles in the ```word``` folder and save them into the corresponding json file.
 
 
-The code logic is: 
+### The code logic is: 
 1. Extract text from the word document and save it in the txt_original folder.
 
 2. Used to filter out reference paragraphs and some short, abnormal paragraphs, and store the results in txt_reprocess.
