@@ -90,6 +90,6 @@ model_dir = snapshot_download('AI-ModelScope/Mistral-7B-Instruct-v0.2', revision
 model_dir = snapshot_download("LLM-Research/Meta-Llama-3-8B-Instruct", revision='master', cache_dir='/home/pretrained_models')
 ```
 
-## Fine-tuning、 Inference、 Evaluate
+## Fine-tuning, inference, evaluation, and using of NMRExtractor
 
-Code and tutorials for fine-tuning language models (Llama3, Llama2, Mistral) for NMRExtractor are in the - ```NMRExtractor/``` folder.
+Code and tutorials for fine-tuning, inference, evaluation, and using language models (Llama3, Llama2, Mistral) for NMRExtractor are in the - ```NMRExtractor/``` folder.
