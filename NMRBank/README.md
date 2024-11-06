@@ -22,7 +22,7 @@ We also provide the NMRBank dataset in JSON format for convenient access and eas
 ### Read csv file
 ```python
 import pandas as pd
-# Reading CSV Files
+# Reading csv Files
 df = pd.read_csv(r"NMRBank_data_225809.csv", encoding="utf-8")
 df
 ```
