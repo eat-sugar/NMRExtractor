@@ -28,11 +28,11 @@ Preprocessed data, NMRExtractor paragraph extraction and fine-tuning code, Rule-
 ### NMR Data Extraction Demo: Extracting data from an NMR data paragraph using NMRExtractor
 Here we provide an example notebook using Gradio visualization and NMRExtractor to extract NMR data in ```demo/NMRExtractor_CPU.ipynb```, which you can use locally to extract NMR data from paragraphs using your computer's CPU.
 
+We also provide an online demo of NMRExtractor at https://huggingface.co/spaces/sweetssweets/NMRExtractor
+
 ### Complete workflow for NMR data extraction: Obtaining data from literature using NMRExtractor
 A full workflow for extracting NMR data from an article using NMRExtractor is also provided in ```demo/demo_use_NMRExtractor_extract_NMR_data_from_Article.ipynb```, using 1×40GB A100 (using vllm).
 
-We also provide an online demo of NMRExtractor at
-https://huggingface.co/spaces/sweetssweets/NMRExtractor
 
 ## Download and use NMRExtractor model weights
 
@@ -45,6 +45,23 @@ https://huggingface.co/sweetssweets/NMRExtractor.
 The NMRBank dataset can be downloaded from the ```NMRBank``` folder in both csv and json formats.
 
 NMRBank contains 225,809 experimental 1H and 13C NMR data extracted from the literature, and we have successfully converted the IUPAC names of 156,621 of these data into SMILES.
+### NMRBank dataset reading and viewing
+
+### Read csv file
+```python
+import pandas as pd
+# Reading csv Files
+df = pd.read_csv(r"NMRBank_data_225809.csv", encoding="utf-8")
+df
+```
+
+### Read json file
+```python
+import pandas as pd
+# Reading json Files
+df = pd.read_json(r"NMRBank_data_225809.json", orient="records", lines=True)
+df
+```
 
 ## 📀Fine-tuning Open-source Language Models (Mistral, Llama2，Llama3) 
 
