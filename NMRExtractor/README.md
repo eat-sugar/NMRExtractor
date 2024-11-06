@@ -30,3 +30,12 @@ Publicly available articles from the PubMed database can be downloaded from http
 The data description of PubMed database can be found at https://pmc.ncbi.nlm.nih.gov/tools/ftp/
 
 The code for extracting NMR data from the PubMed article using NMRExtractor is in ```4_Extract_NMR_data_from_Pubmed_articles_using_NMRExtractor.ipynb```
+
+Using 1×40GB A100 (using vllm).
+
+## 5. Download and use NMRExtractor model weights
+
+Replace the "model_path" in the code with the folder path where the NMRExtractor weights are located.
+
+The model weights of NMRExtractor can be downloaded from 
+https://huggingface.co/sweetssweets/NMRExtractor. 
