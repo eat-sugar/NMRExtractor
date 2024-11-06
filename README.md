@@ -5,6 +5,11 @@
 git clone https://github.com/eat-sugar/NMRExtractor.git
 cd NMRExtractor
 ```
+## PubMed Articles
+Publicly available articles from the PubMed database can be downloaded from https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_bulk/
+
+The data description of PubMed database can be found at https://pmc.ncbi.nlm.nih.gov/tools/ftp/
+
 ## 🖊 Datasets and Codes
 
 Preprocessed data, NMRExtractor paragraph extraction and fine-tuning code, Rule-based method code, NMRBank datasets, README workflows have been placed in the corresponding folders:
@@ -20,20 +25,25 @@ Preprocessed data, NMRExtractor paragraph extraction and fine-tuning code, Rule-
 
 ##  Demo of NMRExtractor
 
-Here we provide an example notebook using Gradio visualization and NMRExtractor to extract NMR data in ```demo/NMRExtractor_CPU.ipynb```.
+### NMR Data Extraction Demo: Extracting data from an NMR data paragraph using NMRExtractor
+Here we provide an example notebook using Gradio visualization and NMRExtractor to extract NMR data in ```demo/NMRExtractor_CPU.ipynb```, which you can use locally to extract NMR data from paragraphs using your computer's CPU.
 
-A full workflow for extracting NMR data from an article using NMRExtractor is also provided in ```demo/demo_use_NMRExtractor_extract_NMR_data_from_Article.ipynb```.
+### Complete workflow for NMR data extraction: Obtaining data from literature using NMRExtractor
+A full workflow for extracting NMR data from an article using NMRExtractor is also provided in ```demo/demo_use_NMRExtractor_extract_NMR_data_from_Article.ipynb```, using 1×40GB A100 (using vllm).
 
 We also provide an online demo of NMRExtractor at
 https://huggingface.co/spaces/sweetssweets/NMRExtractor
 
-## NMRExtractor Model Weight  Downloads
+## Download and use NMRExtractor model weights
+
+Replace the "model_path" in the code with the folder path where the NMRExtractor weights are located.
 
 The model weights of NMRExtractor can be downloaded from 
 https://huggingface.co/sweetssweets/NMRExtractor. 
 
 # NMRBank
-The NMRBank dataset can be downloaded from the NMRBank folder.
+The NMRBank dataset can be downloaded from the ```NMRBank``` folder in both csv and json formats.
+
 NMRBank contains 225,809 experimental 1H and 13C NMR data extracted from the literature, and we have successfully converted the IUPAC names of 156,621 of these data into SMILES.
 
 ## 📀Fine-tuning Open-source Language Models (Mistral, Llama2，Llama3) 
