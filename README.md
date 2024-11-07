@@ -1,4 +1,4 @@
-# NMRExtractor
+# 🔔 NMRExtractor
 
 ## Download
 ```bash
@@ -23,7 +23,7 @@ Preprocessed data, NMRExtractor paragraph extraction and fine-tuning code, Rule-
 - ```NMRBank/```
 
 
-##  Demo of NMRExtractor
+## 💡 Demo of NMRExtractor
 
 ### NMR Data Extraction Demo: Extracting data from an NMR data paragraph using NMRExtractor
 Here we provide an example notebook using Gradio visualization and NMRExtractor to extract NMR data in ```demo/NMRExtractor_CPU.ipynb```, which you can use locally to extract NMR data from paragraphs using your computer's CPU.
@@ -34,14 +34,14 @@ We also provide an online demo of NMRExtractor at https://huggingface.co/spaces/
 A full workflow for extracting NMR data from an article using NMRExtractor is also provided in ```demo/demo_use_NMRExtractor_extract_NMR_data_from_Article.ipynb```, using 1×40GB A100 (using vllm).
 
 
-## Download and use NMRExtractor model weights
+## 🏆 Download and use NMRExtractor model weights
 
 Replace the "model_path" in the code with the folder path where the NMRExtractor weights are located.
 
 The model weights of NMRExtractor can be downloaded from 
 https://huggingface.co/sweetssweets/NMRExtractor. 
 
-# NMRBank
+# 🔔 NMRBank
 The NMRBank dataset can be downloaded from the ```NMRBank``` folder in both csv and json formats.
 
 NMRBank contains 225,809 experimental 1H and 13C NMR data extracted from the literature, and we have successfully converted the IUPAC names of 156,621 of these data into SMILES.
@@ -63,7 +63,7 @@ df = pd.read_json(r"NMRBank_data_225809.json", orient="records", lines=True)
 df
 ```
 
-## 📀Fine-tuning Open-source Language Models (Mistral, Llama2，Llama3) 
+## 📀 Fine-tuning Open-source Language Models (Mistral, Llama2，Llama3) 
 
 ### Environment (Linux)
 ```bash
