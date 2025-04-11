@@ -1,7 +1,7 @@
 
-# Due to Git Large File Storage (LFS) limitations, please visit https://huggingface.co/datasets/sweetssweets/NMRBank to view and download the latest NMRBank dataset.
+# 🔔Due to Git Large File Storage (LFS) limitations, please visit https://huggingface.co/datasets/sweetssweets/NMRBank to view and download the latest NMRBank dataset.
 
-- ## ```https://huggingface.co/datasets/sweetssweets/NMRBank```
+💡- ```https://huggingface.co/datasets/sweetssweets/NMRBank```
 
 ## 1. NMRBank data (225809)
 
