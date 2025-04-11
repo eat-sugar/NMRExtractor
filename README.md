@@ -48,8 +48,11 @@ https://huggingface.co/sweetssweets/NMRExtractor.
 The NMRBank dataset can be downloaded from the ```NMRBank``` folder in both csv and json formats.
 
 NMRBank contains 225,809 experimental 1H and 13C NMR data extracted from the literature, and we have successfully converted the IUPAC names of 156,621 of these data into SMILES.
+
 We have normalized the dataset based on standardized SMILES strings. The total number of unique SMILES strings is 149,135.
+
 For the highest confidence interval (0.6–1), the number of unique SMILES records is 123,174.
+
 For the highest confidence interval (0.8–1), the number of unique SMILES records is 91,707.
 ### NMRBank dataset reading and viewing
 
