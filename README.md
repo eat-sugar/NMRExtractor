@@ -1,3 +1,4 @@
+![](https://github.com/eat-sugar/NMRExtractor/blob/main/images/figure1.PNG)
 # 🔔 NMRExtractor
 
 ## Download
